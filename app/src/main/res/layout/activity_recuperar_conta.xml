@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Conversion"
+    tools:context="com.example.fernandezbank.Autenticacao.RecuperarContaActivity"
+    tools:ignore="ExtraText">
+
+
+    -<ScrollView
+    android:layout_height="0dp"
+    android:layout_width="0dp"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollView4">
+
+
+    -<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="32dp">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:text="Digite seu e-mail que te enviaremos um link \npara você alterar sua senha."/>
+
+
+    -<com.google.android.material.textfield.TextInputLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:id="@+id/textInputLayout"
+    app:layout_constraintTop_toBottomOf="@+id/textView"
+    android:textColorHint="@color/black"
+    android:layout_marginTop="32dp"
+    android:hint="Email">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/edtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        android:drawableStart="@drawable/ic_email_login"
+        android:drawablePadding="16dp"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/black"
+        tools:ignore="TouchTargetSizeCheck" />
+
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnRecuperarConta"
+        android:textColor="@android:color/white"
+        android:text="Receber e-mail"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textAllCaps="false"
+        android:onClick="validaDados"
+        android:background="@drawable/bg_notificacao"/>
+
+    <ProgressBar
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/btnRecuperarConta"
+        android:layout_marginTop="8dp"
+        tools:visibility="visible"
+        android:visibility="gone"
+        android:layout_gravity="center"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.fernandezbank.Deposito.DepositoReciboActivity">
+
+    <include
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        layout="@layout/toolbar_recibo"
+        android:id="@+id/include2"/>
+
+    -<ScrollView
+
+    android:layout_height="0dp"
+    android:layout_width="match_parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/include2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:fillViewport="true">
+
+
+    -<androidx.constraintlayout.widget.ConstraintLayout
+
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:padding="24dp">
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView4"
+        android:textSize="24dp"
+        android:textColor="@color/colorRecibo"
+        android:textAlignment="center"
+        android:text="Depósito efetuado \ncom sucesso!"
+
+        />
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView5"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        android:textAlignment="center"
+        android:text="Seu deposito ficará disponível em até 3 dias úteis."
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textView6"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:textAlignment="center"
+        android:text="Código Transação"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textCodigo"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        android:textSize="16sp"
+        android:textAlignment="center"
+        tools:text="-MEiz1lUlLnXxLLcK9Yh"/>
+
+    <include
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" layout="@layout/divisor"
+        android:id="@+id/include3"
+        app:layout_constraintTop_toBottomOf="@+id/textCodigo"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/textView8"
+        app:layout_constraintTop_toBottomOf="@+id/include3"
+        android:text="Data deposito"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        android:text="Valor deposito"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textData"
+        app:layout_constraintTop_toBottomOf="@+id/include3"
+        tools:text="31/12/2022 10:35"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/textValor"
+        app:layout_constraintTop_toBottomOf="@+id/textData"
+        tools:text="R$ 100,00"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+    <Button
+
+        android:background="@drawable/bg_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/btnOK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@android:color/white"
+        android:text="OK"
+        android:layout_margin="24dp"
+        android:backgroundTint="@color/red"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+    tools:context="com.example.fernandezbank.app.MainActivity"
+    android:padding="24dp"
+    android:background="@color/colorAccent"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="388dp"
+        android:layout_height="155dp"
+        android:background="@color/colormenu"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="16dp"
+            app:cardCornerRadius="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <ImageView
+
+                android:id="@+id/imagemPerfil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/loading"
+             />
+        </androidx.cardview.widget.CardView>
+
+        <ImageButton
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="72dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_question"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.829"
+            app:layout_constraintStart_toEndOf="@+id/cardView"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <TextView
+
+            android:id="@+id/textolausuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:text="@string/text_nome_usuario"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.082"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagemPerfil"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="NotSibling" />
+
+        <ImageButton
+
+            android:id="@+id/btnNotificacao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_notifications"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.234"
+            app:layout_constraintStart_toEndOf="@+id/question"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.091" />
+
+        <TextView
+
+            android:id="@+id/textNotificacao"
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:background="@drawable/bg_notificacao"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:textColor="@android:color/white"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/cardView"
+            app:layout_constraintEnd_toEndOf="@+id/btnNotificacao"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/question"
+            app:layout_constraintTop_toTopOf="@+id/btnNotificacao"
+            app:layout_constraintVertical_bias="0.072"
+            tools:text="0"
+            tools:visibility="visible" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+        android:textColor="@android:color/white"
+        android:text="Meu saldo"
+        android:layout_marginTop="16dp"/>
+
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/textSaldo"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        android:textColor="@android:color/white"
+        tools:text="R$ 0,00"
+        android:layout_marginTop="16dp"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/textView10"
+        app:layout_constraintTop_toBottomOf="@+id/textSaldo"
+        android:textColor="@android:color/white"
+        android:text="Últimas 6 atividades"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:id="@+id/textVerTodas"
+        app:layout_constraintTop_toBottomOf="@+id/textSaldo"
+        android:textColor="@android:color/white"
+        android:text="Ver todas"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    -
+
+    <androidx.cardview.widget.CardView android:layout_height="0dp" android:layout_width="match_parent" app:layout_constraintStart_toStartOf="parent" app:cardCornerRadius="10dp" android:id="@+id/cardView2" app:layout_constraintTop_toBottomOf="@+id/textView10" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView" android:layout_marginVertical="16dp">
+
+
+    -<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="match_parent" android:layout_width="match_parent">
+
+    <androidx.recyclerview.widget.RecyclerView android:layout_height="match_parent" android:layout_width="match_parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" android:id="@+id/rvExtrato" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintTop_toTopOf="@+id/rvExtrato" app:layout_constraintStart_toStartOf="@+id/rvExtrato" app:layout_constraintEnd_toEndOf="@+id/rvExtrato" app:layout_constraintBottom_toBottomOf="parent" android:gravity="center" android:orientation="vertical" android:elevation="2dp">
+
+    <ProgressBar android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/progressBar"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/textInfo" android:text="Carregando..." android:layout_marginTop="8dp" android:textAlignment="center"/>
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<HorizontalScrollView android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintStart_toStartOf="parent" android:id="@+id/horizontalScrollView" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent" android:scrollbarThumbHorizontal="@null" android:layout_marginBottom="16dp">
+
+
+    -<LinearLayout android:layout_height="wrap_content" android:layout_width="wrap_content" android:orientation="horizontal">
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="100dp" android:layout_width="100dp" app:cardCornerRadius="5dp" android:id="@+id/cardDeposito" android:layout_marginVertical="8dp" app:cardBackgroundColor="@android:color/white">
+
+    <ImageView android:layout_height="26dp" android:layout_width="26dp" android:src="@drawable/ic_deposito" android:layout_margin="8dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/black" android:text="Depositar" android:layout_margin="8dp" android:layout_gravity="bottom"/>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="100dp" android:layout_width="100dp" app:cardCornerRadius="5dp" android:id="@+id/cardRecarga" android:layout_marginVertical="8dp" app:cardBackgroundColor="@android:color/white" android:layout_marginStart="12dp">
+
+    <ImageView android:layout_height="26dp" android:layout_width="26dp" android:src="@drawable/ic_recarga_cel" android:layout_margin="8dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/black" android:text="Recarga de celular" android:layout_margin="8dp" android:layout_gravity="bottom"/>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="100dp" android:layout_width="100dp" app:cardCornerRadius="5dp" android:id="@+id/cardExtrato" android:layout_marginVertical="8dp" app:cardBackgroundColor="@android:color/white" android:layout_marginStart="12dp">
+
+    <ImageView android:layout_height="26dp" android:layout_width="26dp" android:src="@drawable/ic_historico" android:layout_margin="8dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/black" android:text="Extrato" android:layout_margin="8dp" android:layout_gravity="bottom"/>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="100dp" android:layout_width="100dp" app:cardCornerRadius="5dp" android:id="@+id/cardTransferir" android:layout_marginVertical="8dp" app:cardBackgroundColor="@android:color/white" android:layout_marginStart="12dp">
+
+    <ImageView android:layout_height="26dp" android:layout_width="26dp" android:src="@drawable/ic_transferir" android:layout_margin="8dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/black" android:text="Transferir" android:layout_margin="8dp" android:layout_gravity="bottom"/>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="100dp" android:layout_width="100dp" app:cardCornerRadius="5dp" android:id="@+id/cardCobrar" android:layout_marginVertical="8dp" app:cardBackgroundColor="@android:color/white" android:layout_marginStart="12dp">
+
+    <ImageView android:layout_height="26dp" android:layout_width="26dp" android:src="@drawable/ic_cobrar" android:layout_margin="8dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/black" android:text="Cobrar" android:layout_margin="8dp" android:layout_gravity="bottom"/>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="100dp" android:layout_width="100dp" app:cardCornerRadius="5dp" android:id="@+id/cardMinhaConta" android:layout_marginVertical="8dp" app:cardBackgroundColor="@android:color/white" android:layout_marginStart="12dp">
+
+    <ImageView android:layout_height="26dp" android:layout_width="26dp" android:src="@drawable/ic_user_black" android:layout_margin="8dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/black" android:text="Minha conta" android:layout_margin="8dp" android:layout_gravity="bottom"/>
+
+</androidx.cardview.widget.CardView>
+
+
+    -<androidx.cardview.widget.CardView android:layout_height="100dp" android:layout_width="100dp" app:cardCornerRadius="5dp" android:id="@+id/cardDeslogar" android:layout_marginVertical="8dp" app:cardBackgroundColor="@android:color/white" android:layout_marginHorizontal="12dp">
+
+    <ImageView android:layout_height="26dp" android:layout_width="26dp" android:src="@drawable/ic_sair" android:layout_margin="8dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="@android:color/black" android:text="Sair" android:layout_margin="8dp" android:layout_gravity="bottom"/>
+
+</androidx.cardview.widget.CardView>
+
+</LinearLayout>
+
+</HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_alert_dialog"
+    android:padding="24dp">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" tools:text="Deseja remover a notificação ?" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:textStyle="bold" android:textSize="18sp" android:textColor="#373636" android:textAlignment="center" android:id="@+id/textTitulo"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" tools:text="Aperte em sim para remover esta notificação ou aperte em fechar para cancelar." app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:textAlignment="center" android:id="@+id/textMensagem" app:layout_constraintTop_toBottomOf="@+id/textTitulo" android:layout_marginTop="16dp"/>
+
+    <android.widget.Button android:background="@drawable/bg_edit" android:layout_height="40dp" android:layout_width="match_parent" android:text="Sim" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/btnOK" app:layout_constraintTop_toBottomOf="@+id/textMensagem" android:layout_marginTop="24dp"/>
+
+    <android.widget.Button android:background="@drawable/bg_edit" android:layout_height="40dp" android:layout_width="match_parent" android:text="Fechar" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:textStyle="bold" android:textColor="@color/black" android:id="@+id/btnFechar" app:layout_constraintTop_toBottomOf="@+id/btnOK" android:layout_marginTop="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

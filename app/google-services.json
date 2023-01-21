@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "974891379973",
+    "project_id": "fernandez-bank",
+    "storage_bucket": "fernandez-bank.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974891379973:android:408942bd046d34e6859b6c",
+        "android_client_info": {
+          "package_name": "com.fernandezbank"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974891379973-sdmqq1tujnmpum91fjke0n35d5e6mntt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.fernandezbank",
+            "certificate_hash": "26481b3d7da5e9f6d8e7cbb5164492862bc6308b"
+          }
+        },
+        {
+          "client_id": "974891379973-bdpodkspn2rp11ptgralo8qn09nlp267.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDnvaDkCpH9bmDclSzJVb6BgCGe4W8oPE0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974891379973-bdpodkspn2rp11ptgralo8qn09nlp267.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

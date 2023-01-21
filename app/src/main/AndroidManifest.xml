@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ExtraText">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FernandezBank">
+
+        <activity
+            android:name="com.example.fernandezbank.cobrar.ReciboPagamentoActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FernandezBank" />
+        <activity
+            android:name="com.example.fernandezbank.cobrar.PagarCobrancaActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.fernandezbank.cobrar.CobrancaConfirmaActivity"
+            android:exported="true"
+            android:theme="@style/Theme.FernandezBank" />
+        <activity
+            android:name="com.example.fernandezbank.cobrar.CobrarFormActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.fernandezbank.notificaoes.NotificacoesActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.fernandezbank.extrato.ExtratoActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.fernandezbank.transferencia.TransferenciaReciboActivity"
+            android:theme="@style/Theme.FernandezBank" />
+        <activity
+            android:name="com.example.fernandezbank.transferencia.TransferenciaConfirmaActivity"
+            android:theme="@style/Theme.FernandezBank" />
+        <activity
+            android:name="com.example.fernandezbank.transferencia.SelecionarUsuarioActivity"
+            android:theme="@style/Theme.FernandezBank" />
+        <activity android:name="com.example.fernandezbank.transferencia.TransferenciaFormActivity" />
+        <activity
+            android:name="com.example.fernandezbank.recarga.RecargaReciboActivity"
+            android:theme="@style/Theme.FernandezBank" />
+        <activity android:name="com.example.fernandezbank.recarga.RecargaFormActivity" />
+        <activity
+            android:name="com.example.fernandezbank.Usuario.MinhaContaActivity"
+            android:theme="@style/Theme.FernandezBank2" />
+        <activity
+            android:name="com.example.fernandezbank.Deposito.DepositoReciboActivity"
+            android:theme="@style/Theme.FernandezBank3" />
+        <activity android:name="com.example.fernandezbank.Deposito.DepositoFormActivity" />
+        <activity
+            android:name="com.example.fernandezbank.app.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.Splash">
+            -
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.fernandezbank.Autenticacao.RecuperarContaActivity" />
+        <activity android:name="com.example.fernandezbank.Autenticacao.LoginActivity" />
+        <activity android:name="com.example.fernandezbank.Autenticacao.CadastroActivity" />
+        <activity android:name="com.example.fernandezbank.app.MainActivity" />
+    </application>
+
+</manifest>

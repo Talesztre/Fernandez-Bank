@@ -1,0 +1,76 @@
+<resources>
+    <!-- Base application theme. -->
+
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="Theme.FernandezBank">
+
+    <item name="colorPrimary">@color/red</item>
+
+    <item name="colorPrimaryDark">@color/red</item>
+
+    <item name="colorAccent">@color/red</item>
+
+    <item name="android:navigationBarColor">@color/red</item>
+
+</style>
+
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="Theme.FernandezBank2">
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+
+    <item name="colorPrimaryDark">@color/colorPrimary</item>
+
+    <item name="colorAccent">@color/colorPrimary</item>
+
+    <item name="android:statusBarColor">@android:color/white</item>
+
+    <item name="android:windowLightStatusBar">true</item>
+
+</style>
+
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="Theme.FernandezBank3">
+
+    <item name="colorPrimary">@color/colorPrimary</item>
+
+    <item name="colorPrimaryDark">@android:color/white</item>
+
+    <item name="colorAccent">@color/colorPrimary</item>
+
+    <item name="android:statusBarColor">@android:color/white</item>
+
+    <item name="android:windowLightStatusBar">true</item>
+
+</style>
+
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="Theme.EditText">
+
+    <item name="colorAccent">@android:color/white</item>
+
+</style>
+
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="Theme.Splash">
+
+    <item name="colorPrimaryDark">@color/Conversion</item>
+
+    <item name="colorAccent">@color/white</item>
+
+</style>
+
+    -<style parent="Theme.AppCompat.Light.Dialog.Alert" name="CustomAlertDialog">
+
+    <item name="android:windowBackground">@drawable/bg_alert_dialog</item>
+
+    <item name="android:windowMinWidthMinor">80%</item>
+
+</style>
+
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="Theme.ProgressBar">
+
+    <item name="colorAccent">@android:color/white</item>
+
+</style>
+    -<style parent="Theme.AppCompat.Light.NoActionBar" name="ThemeProgressBar">
+
+    <item name="colorAccent">@color/white</item>
+
+</style>
+</resources>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context="com.example.fernandezbank.Deposito.DepositoFormActivity">
+
+    <include app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" layout="@layout/toolbar_padrao" android:id="@+id/include"/>
+
+
+    -<ScrollView android:layout_height="0dp" android:layout_width="match_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.511" app:layout_constraintTop_toBottomOf="@+id/include" app:layout_constraintBottom_toBottomOf="parent" android:fillViewport="true">
+
+
+    -<androidx.constraintlayout.widget.ConstraintLayout android:layout_height="wrap_content" android:layout_width="match_parent">
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/textView2" android:textSize="16sp" android:textColor="@color/Conversion" android:textAlignment="center" android:text="Informe o valor a ser depositado." android:layout_margin="24dp"/>
+
+    <TextView android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/textView3" app:layout_constraintTop_toBottomOf="@+id/textView2" android:textSize="20sp" android:textColor="@color/Conversion" android:textAlignment="center" android:text="Valor deposito" android:layout_margin="24dp"/>
+
+    <com.blackcat.currencyedittext.CurrencyEditText android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/edtValor" app:layout_constraintTop_toBottomOf="@+id/textView3" android:textSize="30sp" android:textColor="@color/Conversion" android:textAlignment="center" android:layout_margin="24dp" android:backgroundTint="@color/black" android:textColorHint="@color/colorDelete" android:textStyle="bold" android:theme="@style/Theme.EditText"/>
+
+    <ProgressBar android:layout_height="wrap_content" android:layout_width="wrap_content" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/progressBar" app:layout_constraintTop_toBottomOf="@+id/edtValor" android:theme="@style/Theme.ProgressBar" tools:visibility="visible" android:visibility="gone" android:layout_marginTop="8dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
+
+    <Button android:background="@drawable/bg_btn" android:layout_height="wrap_content" android:layout_width="match_parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent" android:id="@+id/btnConfirmar" app:layout_constraintBottom_toBottomOf="parent" android:textColor="@color/colorPrimary" android:text="Confirmar" android:layout_margin="24dp" android:backgroundTint="@android:color/white" android:onClick="validaDeposito"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
