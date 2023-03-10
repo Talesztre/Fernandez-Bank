@@ -5,10 +5,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Conversion"
+<<<<<<< HEAD
     tools:context="com.example.fernandezbank.Autenticacao.CadastroActivity">
 
 
     -<ScrollView
+=======
+    tools:context="com.example.appfernandezbank.Autenticacao.CadastroActivity">
+
+
+    <ScrollView
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
     android:layout_height="0dp"
     android:layout_width="0dp"
     app:layout_constraintTop_toTopOf="parent"
@@ -19,21 +26,34 @@
     android:id="@+id/scrollView2">
 
 
+<<<<<<< HEAD
     -<LinearLayout
+=======
+    <LinearLayout
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
     android:layout_height="wrap_content"
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:padding="24dp">
 
 
+<<<<<<< HEAD
     -<com.google.android.material.textfield.TextInputLayout
     android:layout_height="wrap_content"
+=======
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
     android:layout_width="match_parent"
     android:textColorHint="@color/black"
     android:hint="Nome">
 
     <com.google.android.material.textfield.TextInputEditText
+<<<<<<< HEAD
         android:layout_height="wrap_content"
+=======
+        android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
         android:layout_width="match_parent"
         android:id="@+id/edtNome"
         android:textColor="@color/black"
@@ -45,15 +65,24 @@
 </com.google.android.material.textfield.TextInputLayout>
 
 
+<<<<<<< HEAD
     -<com.google.android.material.textfield.TextInputLayout
     android:layout_height="wrap_content"
+=======
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
     android:layout_width="match_parent"
     android:textColorHint="@color/black"
     android:hint="Email"
     android:layout_marginTop="16dp">
 
     <com.google.android.material.textfield.TextInputEditText
+<<<<<<< HEAD
         android:layout_height="wrap_content"
+=======
+        android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
         android:layout_width="match_parent"
         android:id="@+id/edtEmail"
         android:textColor="@color/black"
@@ -65,15 +94,24 @@
 </com.google.android.material.textfield.TextInputLayout>
 
 
+<<<<<<< HEAD
     -<com.google.android.material.textfield.TextInputLayout
     android:layout_height="wrap_content"
+=======
+    <com.google.android.material.textfield.TextInputLayout
+    android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
     android:layout_width="match_parent"
     android:textColorHint="@color/black"
     android:hint="Telefone"
     android:layout_marginTop="16dp">
 
     <com.santalu.maskara.widget.MaskEditText
+<<<<<<< HEAD
         android:layout_height="wrap_content"
+=======
+        android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
         android:layout_width="match_parent"
         android:id="@+id/edtTelefone"
         android:textColor="@color/black"
@@ -89,7 +127,11 @@
 
 
     -<com.google.android.material.textfield.TextInputLayout
+<<<<<<< HEAD
     android:layout_height="wrap_content"
+=======
+    android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
     android:layout_width="match_parent"
     android:textColorHint="@color/black"
     android:hint="Senha"
@@ -98,7 +140,11 @@
     <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content"
+=======
+        android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
         android:backgroundTint="@color/red"
         android:drawableStart="@drawable/ic_senha_login"
         android:drawablePadding="16dp"
@@ -109,14 +155,22 @@
 
 
     -<com.google.android.material.textfield.TextInputLayout
+<<<<<<< HEAD
     android:layout_height="wrap_content"
+=======
+    android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
     android:layout_width="match_parent"
     android:textColorHint="@color/black"
     android:hint="Confirmar senha"
     android:layout_marginTop="16dp">
 
     <com.google.android.material.textfield.TextInputEditText
+<<<<<<< HEAD
         android:layout_height="wrap_content"
+=======
+        android:layout_height="48dp"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
         android:layout_width="match_parent"
         android:id="@+id/edtConfirmaSenha"
         android:textColor="@color/black"
@@ -128,6 +182,7 @@
 </com.google.android.material.textfield.TextInputLayout>
 
     <Button
+<<<<<<< HEAD
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:id="@+id/btnCriarConta"
@@ -135,10 +190,20 @@
         android:layout_marginTop="16dp"
         android:text="Criar conta"
         android:background="@drawable/bg_btn"
+=======
+        android:layout_height="48dp"
+        android:layout_width="match_parent"
+        android:id="@+id/btnCriarConta"
+        android:textColor="@color/viva"
+        android:layout_marginTop="16dp"
+        android:text="Criar conta"
+        android:background="@drawable/bg_notificacao"
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
         android:onClick="validaDados"
         android:textSize="16sp"
         android:textAllCaps="false"/>
 
+<<<<<<< HEAD
     <ProgressBar
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
@@ -149,6 +214,18 @@
         android:layout_gravity="center"/>
 
 </LinearLayout>
+=======
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </LinearLayout>
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
 
 </ScrollView>
 

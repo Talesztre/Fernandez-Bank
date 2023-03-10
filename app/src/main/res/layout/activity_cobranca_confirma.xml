@@ -5,7 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/Conversion"
+<<<<<<< HEAD
     tools:context="com.example.fernandezbank.cobrar.CobrancaConfirmaActivity">
+=======
+    tools:context="com.example.appfernandezbank.cobrar.CobrancaConfirmaActivity">
+>>>>>>> d54909e (Start commit! Attribute alteration na parte login.)
 
     <include
         android:id="@+id/include7"
